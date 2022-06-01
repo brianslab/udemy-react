@@ -10,11 +10,11 @@
     right: 10px;
 }
 
-.season-display.winter {
+.season-display.winter i {
     color: blue;
 }
 
-.season-display.summer {
+.season-display.summer i {
     color: red;
 }
 
