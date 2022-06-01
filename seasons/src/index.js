@@ -6,13 +6,15 @@ class App extends React.Component {
         super(props);
 
         // the only time a direct assignment to this.state is done is to initialize
-        this.state = { lat: null };
+        this.state = { lat: null, errorMessage: '' };
 
         window.navigator.geolocation.getCurrentPosition(
             (position) => {
                 this.setState({ lat: position.coords.latitude });
             },
-            (err) => console.log(err)
+            (err) => {
+                this.setState({ errorMessage: err.message });
+            }
         );
     }
 
