@@ -27,7 +27,7 @@ class App extends React.Component {
         }
 
         if (!this.state.errorMessage && !this.state.lat) {
-            return <Loading text="Please accept location usage." />;
+            return <Loading text="Please accept location request." />;
         }
     }
 }
