@@ -5,8 +5,6 @@ const Search = () => {
     const [ term, setTerm ] = useState('programming');
     const [ results, setResults ] = useState([]);
 
-    console.log(results);
-
     useEffect(
         () => {
             const search = async () => {
@@ -30,6 +28,28 @@ const Search = () => {
         [ term ]
     );
 
+    const renderedResults = results.map((result) => {
+        return (
+            <div key={result.pageid} className="item">
+                <div className="right floated content">
+                    <a
+                        className="ui button"
+                        href={`https://en.wikipedia.org?curid=${result.pageid}`}
+                    >
+                        Go
+                    </a>
+                </div>
+                <div className="content">
+                    <div className="header">{result.title}</div>
+                    {/* ONLY USE WHEN SOURCE IS TRUSTED. OPEN TO XSS ATTACK */}
+                    <span
+                        dangerouslySetInnerHTML={{ __html: result.snippet }}
+                    />
+                </div>
+            </div>
+        );
+    });
+
     return (
         <div>
             <div className="ui form">
@@ -42,6 +62,7 @@ const Search = () => {
                     />
                 </div>
             </div>
+            <div className="ui celled list">{renderedResults}</div>
         </div>
     );
 };
