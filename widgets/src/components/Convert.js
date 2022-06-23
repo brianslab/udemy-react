@@ -4,6 +4,20 @@ import keys from '../api/keys';
 
 const Convert = ({ language, text }) => {
   const [ translated, setTranslated ] = useState('');
+  const [ debouncedText, setDebouncedText ] = useState(text);
+
+  useEffect(
+    () => {
+      const timerID = setTimeout(() => {
+        setDebouncedText(text);
+      }, 750);
+
+      return () => {
+        clearTimeout(timerID);
+      };
+    },
+    [ text ]
+  );
 
   useEffect(
     () => {
@@ -13,7 +27,7 @@ const Convert = ({ language, text }) => {
           {},
           {
             params : {
-              q      : text,
+              q      : debouncedText,
               target : language.value,
               key    : keys.googleTranslate
             }
@@ -25,7 +39,7 @@ const Convert = ({ language, text }) => {
 
       doTranslation();
     },
-    [ language, text ]
+    [ language, debouncedText ]
   );
 
   return (
