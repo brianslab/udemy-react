@@ -2,14 +2,25 @@ import React from 'react';
 import { Field, formValues, reduxForm } from 'redux-form';
 
 class StreamCreate extends React.Component {
-  renderInput ({ input, label }) {
+  renderError ({ error, touched }) {
+    if (touched && error) {
+      return (
+        <div className="ui error message">
+          <div className="header">{error}</div>
+        </div>
+      );
+    }
+  }
+
+  renderInput = ({ input, label, meta }) => {
     return (
       <div className="field">
         <label>{label}</label>
-        <input {...input} /> {/* lecture 328*/}
+        <input {...input} autoComplete="off" /> {/*lecture 328*/}
+        {this.renderError(meta)}
       </div>
     );
-  }
+  };
 
   onSubmit (formValues) {
     console.log(formValues);
@@ -19,7 +30,7 @@ class StreamCreate extends React.Component {
     return (
       <form
         onSubmit={this.props.handleSubmit(this.onSubmit)}
-        className="ui form"
+        className="ui form error"
       >
         <Field name="title" component={this.renderInput} label="Enter Title" />
         <Field
@@ -48,5 +59,6 @@ const validate = (formValues) => {
 };
 
 export default reduxForm({
-  form : 'streamCreate' // name of form
+  form     : 'streamCreate', // name of form
+  validate
 })(StreamCreate);
