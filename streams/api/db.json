@@ -19,6 +19,11 @@
       "description": "Here's some stream",
       "title": "Other Stream",
       "id": 4
+    },
+    {
+      "title": "new stream",
+      "description": "test",
+      "id": 5
     }
   ]
 }
