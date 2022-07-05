@@ -2,7 +2,7 @@ import React from 'react';
 import { Router, Route } from 'react-router-dom';
 
 import Header from './Header';
-import history from '../History';
+import history from '../history';
 import StreamCreate from './streams/StreamCreate';
 import StreamEdit from './streams/StreamEdit';
 import StreamDelete from './streams/StreamDelete';

@@ -8,8 +8,7 @@ import {
   EDIT_STREAM
 } from './types';
 import streams from '../apis/streams';
-import { formValues } from 'redux-form';
-import { get } from 'lodash';
+import history from '../history';
 
 export const signIn = (userID) => {
   return {
