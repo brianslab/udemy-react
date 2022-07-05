@@ -1,47 +1,10 @@
 {
   "streams": [
     {
-      "title": "mystream",
-      "description": "verycool",
-      "id": 1
-    },
-    {
-      "title": "mystream",
-      "description": "verycool",
-      "id": 2
-    },
-    {
-      "title": "mystream",
-      "description": "verycool",
-      "id": 3
-    },
-    {
-      "description": "Here's some stream",
-      "title": "Other Stream",
-      "id": 4
-    },
-    {
       "title": "new stream",
-      "description": "test",
-      "id": 5
-    },
-    {
-      "title": "brian's stream",
-      "description": "has ID property",
+      "description": "hello, world!",
       "userID": "116609774944459513307",
-      "id": 6
-    },
-    {
-      "title": "unexpected behavior",
-      "description": "woah!",
-      "userID": "116609774944459513307",
-      "id": 7
-    },
-    {
-      "title": "history",
-      "description": "send me home!",
-      "userID": "116609774944459513307",
-      "id": 8
+      "id": 1
     }
   ]
 }
