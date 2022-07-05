@@ -24,6 +24,12 @@
       "title": "new stream",
       "description": "test",
       "id": 5
+    },
+    {
+      "title": "brian's stream",
+      "description": "has ID property",
+      "userID": "116609774944459513307",
+      "id": 6
     }
   ]
 }
