@@ -1,3 +1,16 @@
 {
-  "streams": []
+  "streams": [
+    {
+      "title": "Real Stream",
+      "description": "Wow very cool!",
+      "userID": "116609774944459513307",
+      "id": 1
+    },
+    {
+      "title": "Other Stream",
+      "description": "second stream??? cool",
+      "userID": "116609774944459513307",
+      "id": 2
+    }
+  ]
 }
