@@ -2,14 +2,13 @@
   "streams": [
     {
       "title": "new stream",
-      "description": "hello, world!",
+      "description": "edited with patch",
       "userID": "116609774944459513307",
       "id": 1
     },
     {
       "title": "Reuse, Reduce, Recycle",
-      "description": "Made after major refactor",
-      "userID": "116609774944459513307",
+      "description": "edited ",
       "id": 2
     }
   ]
