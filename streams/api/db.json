@@ -1,15 +1,3 @@
 {
-  "streams": [
-    {
-      "title": "new stream",
-      "description": "edited with patch",
-      "userID": "116609774944459513307",
-      "id": 1
-    },
-    {
-      "title": "Reuse, Reduce, Recycle",
-      "description": "edited ",
-      "id": 2
-    }
-  ]
+  "streams": []
 }
