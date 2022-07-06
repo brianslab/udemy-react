@@ -1,3 +1,10 @@
 {
-  "streams": []
+  "streams": [
+    {
+      "title": "modal test",
+      "description": "yep",
+      "userID": "116609774944459513307",
+      "id": 1
+    }
+  ]
 }
