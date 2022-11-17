@@ -1,5 +1,5 @@
-function Button () {
-  return <button>Button</button>
+function Button({ children }) {
+  return <button>{children}</button>;
 }
 
-export default Button
+export default Button;
