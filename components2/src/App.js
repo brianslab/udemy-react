@@ -7,16 +7,16 @@ function App() {
         <Button>Click here</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>Buy now!</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>Hide ads</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>sample</Button>
       </div>
       <div>
-        <Button></Button>
+        <Button>Bottom Text</Button>
       </div>
     </div>
   );
