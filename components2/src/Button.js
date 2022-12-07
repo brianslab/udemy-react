@@ -24,7 +24,7 @@ Button.propTypes = {
 
     if (count > 1) {
       return new Error(
-        'Button - only one of primary, secondary, success, warning, danger can be true.'
+        'Failed prop type: only one of primary, secondary, success, warning, danger can be true.'
       );
     }
   },
