@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <div>
-        <Button primary rounded onClick={handleClick}>
+        <Button primary rounded className='mb-5' onClick={handleClick}>
           <GoBell />
           Click here
         </Button>
