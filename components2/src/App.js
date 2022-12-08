@@ -1,40 +1,13 @@
-import Button from './components/Button';
-import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
+import Accordion from './components/Accordion';
 
 function App() {
-  const handleClick = () => {
-    console.log('Clicked.');
-  };
+  const items = [
+    { label: 'Accodrion label 1', content: 'Foobar' },
+    { label: 'Accodrion label 2', content: 'Barfoo' },
+    { label: 'Accodrion label 3', content: 'Sample Text' },
+  ];
 
-  return (
-    <div>
-      <div>
-        <Button primary rounded className='mb-5' onClick={handleClick}>
-          <GoBell />
-          Click here
-        </Button>
-      </div>
-      <div>
-        <Button secondary>
-          <GoCloudDownload /> Buy now!
-        </Button>
-      </div>
-      <div>
-        <Button success rounded outline>
-          <GoDatabase />
-          Hide ads
-        </Button>
-      </div>
-      <div>
-        <Button warning outline>
-          sample
-        </Button>
-      </div>
-      <div>
-        <Button danger>Bottom Text</Button>
-      </div>
-    </div>
-  );
+  return <Accordion items={items} />;
 }
 
 export default App;
