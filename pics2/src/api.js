@@ -2,17 +2,15 @@ import axios from 'axios';
 
 import unsplashKey from '../src/config/keys';
 
-const searchImages = async () => {
+const searchImages = async (term) => {
   const response = await axios.get('https://api.unsplash.com/search/photos', {
     headers: {
       Authorization: `Client-ID ${unsplashKey.access}`,
     },
-    params: { query: 'cars' },
+    params: { query: term },
   });
 
-  console.log(response);
-
-  return response;
+  return response.data.results;
 };
 
 export default searchImages;
