@@ -1,37 +1,44 @@
-import Button from '../components/Button';
 import { GoBell, GoCloudDownload, GoDatabase } from 'react-icons/go';
+import Button from '../components/Button';
 
 function ButtonPage() {
-  const handleClick = () => {
-    console.log('Clicked.');
-  };
+  const handleClick = () => {};
 
   return (
     <div>
       <div>
-        <Button primary rounded className='mb-5' onClick={handleClick}>
+        <Button
+          secondary
+          outline
+          rounded
+          className="mb-5"
+          onClick={handleClick}
+        >
           <GoBell />
-          Click here
+          Click me!!
         </Button>
       </div>
       <div>
-        <Button secondary>
-          <GoCloudDownload /> Buy now!
+        <Button danger outline onMouseEnter={handleClick}>
+          <GoCloudDownload />
+          Buy Now!
         </Button>
       </div>
       <div>
-        <Button success rounded outline>
+        <Button warning onMouseLeave={handleClick}>
           <GoDatabase />
-          Hide ads
+          See Deal!
         </Button>
       </div>
       <div>
-        <Button warning outline>
-          sample
+        <Button secondary outline>
+          Hide Ads!
         </Button>
       </div>
       <div>
-        <Button danger>Bottom Text</Button>
+        <Button primary rounded>
+          Something!
+        </Button>
       </div>
     </div>
   );

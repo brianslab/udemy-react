@@ -1,5 +1,4 @@
-import propTypes from 'prop-types';
-import classnames from 'classnames';
+import className from 'classnames';
 
 function Button({
   children,
@@ -12,7 +11,7 @@ function Button({
   rounded,
   ...rest
 }) {
-  const classes = classnames(
+  const classes = className(
     rest.className,
     'flex items-center px-3 py-1.5 border',
     {
@@ -49,7 +48,7 @@ Button.propTypes = {
 
     if (count > 1) {
       return new Error(
-        'Failed prop type: only one of primary, secondary, success, warning, danger can be true.'
+        'Only one of primary, secondary, success, warning, danger can be true'
       );
     }
   },
