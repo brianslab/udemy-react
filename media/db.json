@@ -18,6 +18,16 @@
       "id": 10,
       "title": "Hiking Trip",
       "userId": 1
+    },
+    {
+      "userId": 1,
+      "title": "Awesome Soft Bike",
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "title": "Luxurious Bronze Hat",
+      "id": 12
     }
   ],
   "photos": []
